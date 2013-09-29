@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105437A017F8BF9A007C3DDE /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1054379F17F8BF9A007C3DDE /* example.cpp */; };
 		105437A217F8BF9A007C3DDE /* easybox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 105437A117F8BF9A007C3DDE /* easybox.1 */; };
 		105437A917F8BFC0007C3DDE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105437A817F8BFC0007C3DDE /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		1054379C17F8BF9A007C3DDE /* easybox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = easybox; sourceTree = BUILT_PRODUCTS_DIR; };
-		1054379F17F8BF9A007C3DDE /* example.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = example.cpp; sourceTree = "<group>"; };
 		105437A117F8BF9A007C3DDE /* easybox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = easybox.1; sourceTree = "<group>"; };
 		105437A817F8BFC0007C3DDE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 		1054379E17F8BF9A007C3DDE /* easybox */ = {
 			isa = PBXGroup;
 			children = (
-				1054379F17F8BF9A007C3DDE /* example.cpp */,
 				105437A817F8BFC0007C3DDE /* main.cpp */,
 				105437A117F8BF9A007C3DDE /* easybox.1 */,
 			);
@@ -121,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				105437A917F8BFC0007C3DDE /* main.cpp in Sources */,
-				105437A017F8BF9A007C3DDE /* example.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
