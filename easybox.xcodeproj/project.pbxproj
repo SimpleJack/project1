@@ -28,6 +28,7 @@
 		1054379C17F8BF9A007C3DDE /* easybox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = easybox; sourceTree = BUILT_PRODUCTS_DIR; };
 		105437A117F8BF9A007C3DDE /* easybox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = easybox.1; sourceTree = "<group>"; };
 		105437A817F8BFC0007C3DDE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		105437AD17F8D387007C3DDE /* dump.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dump.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			children = (
 				105437A817F8BFC0007C3DDE /* main.cpp */,
 				105437A117F8BF9A007C3DDE /* easybox.1 */,
+				105437AD17F8D387007C3DDE /* dump.txt */,
 			);
 			path = easybox;
 			sourceTree = "<group>";

