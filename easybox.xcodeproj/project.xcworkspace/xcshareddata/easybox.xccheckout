@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A597569C-9FDB-4322-8830-DE143EDA8ABE</string>
+	<string>A77DB60C-DEAC-4D59-847C-F3517C3A6448</string>
 	<key>IDESourceControlProjectName</key>
 	<string>easybox</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>250A63FB-110C-4167-9891-A290A4C57C15</key>
-		<string>https://friendco.de/Dix@user/easybox.git</string>
+		<key>8DBFD232-4CEA-46F9-96BA-B618604BD8EB</key>
+		<string>https://github.com/SimpleJack/easybox.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>easybox.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>250A63FB-110C-4167-9891-A290A4C57C15</key>
+		<key>8DBFD232-4CEA-46F9-96BA-B618604BD8EB</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://friendco.de/Dix@user/easybox.git</string>
+	<string>https://github.com/SimpleJack/easybox.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>250A63FB-110C-4167-9891-A290A4C57C15</string>
+	<string>8DBFD232-4CEA-46F9-96BA-B618604BD8EB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>250A63FB-110C-4167-9891-A290A4C57C15</string>
+			<string>8DBFD232-4CEA-46F9-96BA-B618604BD8EB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>easybox</string>
 		</dict>
