@@ -6,7 +6,7 @@
 
 int main()                  // "int main() {" bedeutet, dass ich eine Funktion starte und alles in ihr auch dazu gehört.
 {
-    int i, j, k;            // Hier rufe ich das erste mal die Variablen i, j und k auf. Ich sage praktisch nur, dass sie demnächst verwendet werden. int steht für integral und ist die Variablenart
+    int i, j, k;            // Hier rufe ich das erste mal die Variablen i, j und k auf. Ich sage praktisch nur, dass sie demnächst verwendet werden. int steht für integer und ist die Variablenart
     
 	i = 0x00;               // Nun weise ich den Vaiablen einen Wert zu.
 	j = 0x00;               // In diesem Fall ist es jedes mal der Hexadezimalwert
